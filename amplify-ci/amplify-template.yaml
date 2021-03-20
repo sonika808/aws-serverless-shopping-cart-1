@@ -45,6 +45,7 @@ Resources:
                     - "s3:CreateMultipartUpload"
                     - "s3:ListBucket"
                     - "s3:CreateBucket"
+                    - "s3:*"
                 Resource:
                     - !Sub "arn:aws:s3:::${SrcS3Bucket}"
                     - !Sub "arn:aws:s3:::${SrcS3Bucket}/*"
